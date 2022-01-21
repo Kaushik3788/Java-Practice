@@ -1,0 +1,44 @@
+/*
+(Compute the volume of a cylinder) Write a program that reads in the radius
+and length of a cylinder and computes the area and volume using the following
+formulas:
+area = radius * radius * p
+volume = area * length
+*/
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class ques2 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    
+    System.out.println("Enter the Radius of a cylinder : ");
+    double R = input.nextDouble();
+    
+    System.out.println(" Enter the length of a cylinder : ");
+    double L = input.nextDouble();
+    
+    final double pi = 3.1415929;
+    double area = R * R * pi;
+    double vol =  area * L;
+    
+    System.out.println("The area is : " + area);
+    System.out.println("The volume is : "+ vol);
+    
+  }
+}
+
+
+
+
+// Answer :-
+The area is 95.0331
+The volume is 1140.4 
+
+
