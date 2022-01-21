@@ -1,0 +1,30 @@
+/*
+(Financial application: calculate tips) Write a program that reads the subtotal
+and the gratuity rate, then computes the gratuity and total. For example, if the
+user enters 10 for subtotal and 15% for gratuity rate,
+*/
+
+
+import java.util.Scanner;
+public class ques5 {
+  public static void main (String [] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter the the subtotal and the gratuity rate");
+    double S = input.nextDouble();
+    double G =input.nextDouble();
+    
+    double Gr = S * (G /100);
+    double T = S + Gr;
+    
+    System.out.println("The gratuity is $ " + Gr + " and total is $ " + T);
+
+  }
+}
+
+
+
+
+//Answer:-
+Enter the the subtotal and the gratuity rate 10 15
+The gratuity is $ 1.5 and total is $ 11.5
