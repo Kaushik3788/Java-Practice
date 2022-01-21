@@ -1,0 +1,26 @@
+/*
+(Convert feet into meters) Write a program that reads a number in feet, converts it
+to meters, and displays the result. One foot is 0.305 meter. 
+*/
+
+import java.util.Scanner;
+public class ques3 {
+  public static void main(String[] args) 
+  {
+    Scanner input = new Scanner(System.in);
+    // Created Object 
+    System.out.println("Enter a number in feet :");
+    double F = input.nextDouble();
+    // Taking Feet value (F).
+    
+    double M = F * 0.305;
+    // Here M is Meter and as we know 1 feet = 0.305 m. 
+    System.out.println(F + " feet is " + M + " meter");
+  }
+}
+
+
+
+//Answer :-
+Enter a number in feet : 16.5
+16.5 feet is 5.0325 meter
